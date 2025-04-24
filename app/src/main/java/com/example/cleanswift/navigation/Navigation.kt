@@ -15,7 +15,7 @@ fun SetupNavigation() {
         startDestination = Screen.Login.route
     ) {
         composable(route = Screen.Login.route) {
-            LoginScreen(navController)
+            LoginScreen()
         }
     }
 }
