@@ -23,6 +23,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -78,7 +79,7 @@ class SplashScreen : ComponentActivity() {
                 )
 
                 Text(
-                    text = "CleanSwift",
+                    text = stringResource(id = R.string.title_splash_screen),
                     modifier = Modifier.padding(top = 16.dp),
                     color = Color.Black,
                     fontSize = 36.sp,
@@ -87,7 +88,7 @@ class SplashScreen : ComponentActivity() {
                 )
 
                 Text(
-                    text = "Fast & Fresh Laundry at Your Fingertips",
+                    text = stringResource(id = R.string.subtitle_splash_screen),
                     modifier = Modifier.padding(top =20.dp),
                     color = Color.Black,
                     fontSize = 18.sp,

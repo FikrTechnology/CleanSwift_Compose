@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Clean Swift</string>
+    <string name="title_splash_screen">CleanSwift</string>
+    <string name="subtitle_splash_screen">Fast &amp; Fresh Laundry at Your Fingertips</string>
+    <string name="label_username">Username</string>
+    <string name="label_password">Password</string>
+    <string name="placeholder_username">Masukkan Username</string>
+    <string name="placeholder_password">Masukkan Password</string>
+    <string name="btn_login">Masuk</string>
 </resources>
