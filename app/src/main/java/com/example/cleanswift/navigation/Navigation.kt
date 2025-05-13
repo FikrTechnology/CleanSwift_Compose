@@ -15,7 +15,18 @@ fun SetupNavigation() {
         startDestination = Screen.Login.route
     ) {
         composable(route = Screen.Login.route) {
-            LoginScreen()
+            LoginScreen(
+                onClickLogin = {
+                    navController.navigate(Screen.NavHome.route) {
+                        popUpTo(Screen.Login.route) {
+                            inclusive = true
+                        }
+                    }
+                }
+            )
+        }
+        composable(route = Screen.NavHome.route) {
+            NavigationHome()
         }
     }
 }

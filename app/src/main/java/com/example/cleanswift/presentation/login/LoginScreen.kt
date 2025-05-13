@@ -33,7 +33,9 @@ import com.example.cleanswift.ui.theme.CleanSwiftColor
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun LoginScreen() {
+fun LoginScreen(
+    onClickLogin: () -> Unit = {}
+) {
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
 
@@ -47,7 +49,7 @@ fun LoginScreen() {
                 SingleButton(
                     modifier = Modifier
                         .padding(horizontal = 30.dp),
-                    onClickBtn = {},
+                    onClickBtn = { onClickLogin() },
                     enabled = true,
                     btnColors = ButtonDefaults.buttonColors(containerColor = CleanSwiftColor.Primary),
                     textBtn = "Masuk",

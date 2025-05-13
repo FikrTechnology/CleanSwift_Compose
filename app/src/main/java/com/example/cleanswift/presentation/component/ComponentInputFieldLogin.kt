@@ -46,7 +46,8 @@ fun OutlinedTextFieldLogin(
                 unfocusedPlaceholderColor = CleanSwiftColor.Gray,
             ),
             shape = RoundedCornerShape(8.dp),
-            leadingIcon = leadingIcon
+            leadingIcon = leadingIcon,
+            singleLine = true
         )
     }
 }
